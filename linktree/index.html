@@ -1,18 +1,89 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- F2 renomeia o arquivo selecionado -->
-    
+    <!-- F2 é o atalho que renomeia o arquivo selecionado -->
+    <!-- Ctrl + ; é o atalho para fazer um comentário -->
+    <!-- No head colocamos as configurações do site -->
+    <!-- Toda vez que você ver uma área que você quer limitar, você usa o 'div' -->
+    <!-- Primeira coisa que se faz é ver quantas divs você vai ter na página -->
+    <!-- Uma div pra cada área que você quer separar -->
+    <!-- Main, header, sector, aside, nav -->
+    <!-- Se o seu site fica se movendo ele cai no SEO, se estiver em dúvida coloque só a altura, porque a altura é o que mais impacta no movimento do site -->
+    <!-- Chamar style na linha deixa o site nas últimas colocações no SEO -->
+    <!-- Imagem no HTML se coporta como texto -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leitura</title>
+    <style>
+        main{
+        background-color: cadetblue;
+        background-image: url(./image/livrofundo2.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        }
+        body{
+            background-color: rgb(80, 38, 131);
+        }
+        #logo{
+            text-align: center;
+        }
+        #logo img{
+            margin: 40px;
+            padding:20px;
+            background-color: white;
+            border-radius: 50%;
+            
+        }
+        h1{
+            color: white;
+            text-align: center;
+            background-color: black;
+            padding:20px 0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        div{
+            text-align: center;
+        }
+
+        main{
+            margin: 50px;
+        }
+
+    </style>
 </head>
 <body>
-   <div>
-    <img src="./image/Open_book_nae_02.svg.png" alt="livros logomarca">
+   <main>
+    <div id="logo">
+        <img src="./image/Open_book_nae_02.svg.png" alt="livros logomarca" width="200" height="200">
+    </div>
     <h1>Projeto Leia Mais</h1>
-   </div>
-    
+    <div>
+        <!-- tag de link -->
+        <a href="https://google.com.br" target="_blank">
+            <img src="./image/icons8-youtube-48.png" alt="logo do youtube com link para youtube" height="40">
+            Youtube
+        </a>
+    </div>
+    <div>
+        <!-- tag de link -->
+        <a href="https://google.com.br" target="_blank">
+            <img src="./image/icons8-instagram-48.png" alt="logo do youtube com link para youtube" height="40">
+            Instagram
+        </a>
+    </div>
+
+    <div>
+        <!-- tag de link -->
+        <a href="https://google.com.br" target="_blank">
+            <img src="./image/icons8-whatsapp-48.png" alt="logo do youtube com link para youtube" height="40">
+            Whatsapp
+        </a>
+    </div>
+   </main>
+
+   
 </body>
 </html>
