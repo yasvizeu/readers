@@ -11,27 +11,32 @@
     <!-- Se o seu site fica se movendo ele cai no SEO, se estiver em dúvida coloque só a altura, porque a altura é o que mais impacta no movimento do site -->
     <!-- Chamar style na linha deixa o site nas últimas colocações no SEO -->
     <!-- Imagem no HTML se coporta como texto -->
+    <!-- W3C - The World Web Consortium -->
+    <!-- W3S - pesquisa -->
+    <!-- Instalar o live server -->
+    <!-- Flex, block, inline, grid, table - MAIS USADOS EM DISPLAY -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leitura</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
         main{
-        background-color: cadetblue;
-        background-image: url(./image/livrofundo2.jpg);
+        background-color: rgb(0, 0, 0);
+        background-image: url(./image/flat-lay-bookmark-books-assortment.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+        height: 100vh;
         }
         body{
-            background-color: rgb(80, 38, 131);
+            background-color: rgb(12, 12, 12);
         }
         #logo{
             text-align: center;
         }
         #logo img{
             margin: 40px;
-            padding:20px;
             background-color: white;
             border-radius: 50%;
             
@@ -39,17 +44,38 @@
         h1{
             color: white;
             text-align: center;
-            background-color: black;
+            background-color: #1b1d1c;
             padding:20px 0;
             font-family: Georgia, 'Times New Roman', Times, serif;
+            border-radius: 50px;
+            
         }
         
         div{
             text-align: center;
         }
 
-        main{
-            margin: 50px;
+    
+
+        .link-social{
+            padding: 10px 0;
+             
+        }
+
+        .link-social a{
+            /* text-align: center; */
+            background-color: rgb(24, 21, 21);
+            margin: auto;
+            color:white;
+            text-decoration: none;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            align-items: center;
+            width: 80%;
+            min-width: 300px;
+            max-width: 400px;
         }
 
     </style>
@@ -57,17 +83,17 @@
 <body>
    <main>
     <div id="logo">
-        <img src="./image/Open_book_nae_02.svg.png" alt="livros logomarca" width="200" height="200">
+        <img src="./image/book-icon-156.jpg" alt="livros logomarca" width="200" height="200">
     </div>
     <h1>Projeto Leia Mais</h1>
-    <div>
+    <div class="link-social">
         <!-- tag de link -->
         <a href="https://google.com.br" target="_blank">
             <img src="./image/icons8-youtube-48.png" alt="logo do youtube com link para youtube" height="40">
             Youtube
         </a>
     </div>
-    <div>
+    <div class="link-social">
         <!-- tag de link -->
         <a href="https://google.com.br" target="_blank">
             <img src="./image/icons8-instagram-48.png" alt="logo do youtube com link para youtube" height="40">
@@ -75,7 +101,7 @@
         </a>
     </div>
 
-    <div>
+    <div class="link-social">
         <!-- tag de link -->
         <a href="https://google.com.br" target="_blank">
             <img src="./image/icons8-whatsapp-48.png" alt="logo do youtube com link para youtube" height="40">
