@@ -1,0 +1,14 @@
+/* Cda página deve ter um arquivo css separado para o site não ficar pesado. */
+
+header{
+    background-image: url(../images/flat-lay-bookmark-books-assortment.jpg);
+}
+
+nav ul{
+    display: inline-flex;
+    justify-content: center;
+}
+
+nav li{
+    list-style: none;
+}
