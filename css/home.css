@@ -1,14 +1,120 @@
-/* Cda página deve ter um arquivo css separado para o site não ficar pesado. */
+/* Cada página deve ter um arquivo css separado para o site não ficar pesado. */
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0
+    }
 
 header{
+    background-color: var(--escuro);
     background-image: url(../images/flat-lay-bookmark-books-assortment.jpg);
+    background-size: cover;
+    background-position: center top;
+    
+}
+
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--shadow);
+}
+
+
+.header-content {
+    display: flex;
+    /* flex-direction: column-reverse; */
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--shadow);
+    /* height: 100vh; */
+    min-height: 400px;
+}
+    
+.header-text,
+.header-logo {
+    width: 50%;
+}
+
+.header-text {
+    padding: 40px;
+}
+
+/*.header-logo {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}*/
+.header-logo {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+} 
+/* ou
+.header-logo {
+    text-align: center; */
+#icon img{
+    border-radius: 50%;
+    
 }
 
 nav ul{
-    display: inline-flex;
+    display: flex;
     justify-content: center;
 }
 
 nav li{
     list-style: none;
 }
+
+
+
+nav {
+    background-color: var(--escurao);
+}
+
+nav li a{
+    color: cadetblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 23px;
+}
+nav li a:hover{
+    color: var(--white);
+    background-color: var(--escurao);
+    border-bottom: solid 4px var(--white);
+}
+/* nav li a:hover{
+    color: var(--gray);
+    border-bottom: solid 2px var(--grey);
+
+} 
+*/
+/* por ter usado o paddisng, a área de click do usuário é maior, o margin só separaria e deixaria a área de click menor  */
+nav{
+    line-height: 40px;
+}
+
+h1{
+    color: var(--blue);
+    margin-left: 20px;
+    
+}
+
+p {
+    color: var(--white);
+    margin-left: 20px;
+   
+
+}
+
+
+
+
+
