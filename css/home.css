@@ -164,6 +164,19 @@ height:155px;
     background-color: var(--escurao);
 }
 
+.card a{
+    text-decoration: none;
+}
+
+.card:hover{
+    color: var(--white);
+    background-color: rgb(51, 67, 68);
+    border-bottom: solid 7px var(--white);
+}
+
+.card h2:hover{
+    color: var(--white);
+}
 
 .card-img img{
 width: 100%;
@@ -189,5 +202,36 @@ height:155px;
     gap: 10px;
 
 }
+
+/* Contato */
+.contato{
+    background-color: var(--escurao);
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.local h2{
+    color:var(--blue);
+    font-size: 22px;
+    padding: 10px 0;
+    margin-left: 18px;
+}
+
+.local p{
+    font-size:18px;
+    margin-bottom: 10px;
+}
+
+.local, 
+.contato-form{
+    width: 50%;
+    padding:50px;
+}
+
+
+
+
+
 
 
