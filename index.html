@@ -22,10 +22,11 @@
 
         <nav>
             <ul>
-                <li><a href="#">Início</a></li>
-                <li><a href="#">Galeria</a></li>
-                <li><a href="#">Agenda</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#cards">Galeria</a></li>
+                <li><a href="index.html#agenda">Agenda</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+                <li><a href="login.html">Entrar</a></li>
             </ul>
         </nav>
         <div class="header-main">
@@ -47,7 +48,7 @@
             </div>
         </div>
     </header>
-    <section class="card-content">
+    <section class="card-content" id="cards">
         <div class="container">
             <div class="card">
                 <a href="https://google.com.br" target="_blank">
@@ -156,7 +157,7 @@
         </div>
     </section>
 
-    <section class="container contato">
+    <section class="container contato" id="contato">
         <div class="local">
             <div class="mapa">
                 <iframe
@@ -172,7 +173,7 @@
             </div>
         </div>
 
-        <form action="http://api.livros.com.br/coment" class="contato-form">
+        <form action="#" class="contato-form">
 
             <div class="form-group">
                 <!-- <label for="nome">Nome</label> -->
@@ -181,34 +182,43 @@
 
             <div class="form-group">
                 <!-- <label for=""></label> -->
-                <input type="text" id="" name="" placeholder="E-mail">
+                <input type="email" id="" name="" placeholder="E-mail" required>
             </div>
 
             <div class="form-group">
                 <!-- <label for=""></label> -->
-                <input type="tel" id="" name="" placeholder="Telefone">
+                <input type="tel" id="tel" name="" placeholder="Telefone">
             </div>
 
             <div class="form-group">
-                <!-- <label for="assunto">Assunto</label> -->
+                <input list="opcoes" placeholder="Escolha uma opção">
+                <datalist id="opcoes">
+                    <option value="Elogios">
+                    <option value="Sugestões">
+                    <option value="Reclamações">
+                </datalist>
+                <!-- <label for="assunto">Assunto</label>
                 <select name="assunto" id="assunto">
-                    <option selected disabled>Assunto</option>
+                    <option value=""selected disabled>Escolha uma opção</option>
                     <option value="2">Sugestão</option>
                     <option value="3">Elogios</option>
-                </select>
+                </select> -->
             </div>
 
             <div class="form-group">
                 <!-- <label for=""></label> -->
-                <textarea id="mensagem" name="mensagem" rows="7" placeholder="Comentário..."></textarea>>
+                <textarea id="mensagem" name="mensagem" rows="7" placeholder="Comentário..."></textarea>
             </div>
-            <div>
+            <div class="form-group form-group-button">
                 <button type="submit" onclick="alert('Enviado!')">Enviar</button>
+                <button type="reset">Limpar</button>
             </div>
+
 
         </form>
 
     </section>
+
 
 </body>
 
