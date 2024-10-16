@@ -1,0 +1,61 @@
+/* Form */
+
+.form-group{
+    margin-bottom: 10px;
+    
+}
+
+.form-group input, 
+.form-group select,
+.form-group textarea{
+    width: 100%;
+    /* background-color: rgb(209, 211, 195); */
+    background-color: rgb(92, 121, 121);
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: solid 1px;
+
+}
+
+/* .form-group select{
+    width: 104%;
+} */
+
+.form-group input::placeholder {
+    color: var(--white); /* Altere para a cor desejada */
+    /* opacity: 1; Define a opacidade do placeholder (1 é totalmente opaco) */
+}
+
+.form-group textarea::placeholder {
+    color: var(--white);
+}
+.form-group datalist::placeholder{
+    color: var(--white);
+}
+/* .form-group select option[disabled] {
+    color: var(--white); 
+}
+
+option[disabled] {
+    color: var(--white); /* Cor do "placeholder" }*/
+
+
+.form-group button{
+    background-color: var(--blue);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: solid 1px var(--white);
+
+    
+}
+
+.form-group button:hover{
+    background-color: var(--escuro);
+}
+
+.form-group-button {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
