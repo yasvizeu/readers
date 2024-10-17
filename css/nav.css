@@ -64,28 +64,28 @@ header{
     
 }
 
-nav ul{
+nav-top ul{
     display: flex;
     justify-content: center;
 }
 
-nav li{
+nav-top li{
     list-style: none;
 }
 
 
 
-nav {
+nav-top {
     background-color: var(--escurao);
 }
 
-nav li a{
+nav-top li a{
     color: var(--blue);
     text-decoration: none;
     padding: 10px 20px;
     font-size: 23px;
 }
-nav li a:hover{
+nav-top li a:hover{
     color: var(--white);
     background-color: var(--escurao);
     border-bottom: solid 4px var(--white);
@@ -97,7 +97,7 @@ nav li a:hover{
 } 
 */
 /* por ter usado o paddisng, a área de click do usuário é maior, o margin só separaria e deixaria a área de click menor  */
-nav{
+nav-top{
     line-height: 40px;
 }
 
@@ -111,9 +111,34 @@ h1{
     
 }
 
-nav p {
+nav-top a{
     color: var(--white);
     margin-left: 20px;
    
-
 }
+
+a.nav-link{
+    color: var(--white);
+    margin-left: 20px;
+}
+
+li.nav-item{
+    color: cadetblue;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 23px;
+}
+
+li.nav-item a:hover{
+    color: var(--white);
+    background-color: var(--escurao);
+    border-bottom: solid 4px var(--white);
+}
+/* 
+.navbar-toggler{
+    color: white;
+}
+
+.navbar-toggler-icon{
+    color: white; 
+}  */

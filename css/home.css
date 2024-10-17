@@ -230,3 +230,25 @@ height:155px;
     padding:40px;
 }
 
+@media (max-width:760px){
+    .contato{
+        flex-direction: column;
+    }
+    .mapa{
+        width: 150%;;
+    }
+    .contato-form{
+        width: 80%;
+    }
+}
+    
+
+
+@media (max-width:400px){
+    .header-content {
+        flex-direction: column-reverse;
+    }
+
+}
+
+

@@ -1,1 +1,53 @@
 @import "./form.css";
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-access{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100vh;
+    position: relative;
+    top: 0;
+    background-color: rgb(90, 121, 122);
+    
+}
+
+.form-access form{
+    /* usando o position ao invés do flex  */
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    border: solid 2px var(--white);
+    padding: 30px;
+    background-color: var(--escuro);
+    
+}
+
+.input{
+    width: 90%;
+}
+
+.user-remember{
+    margin-bottom: 10px;
+}
+
+.form-group a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.form-access button{
+    padding: 7px;
+    width: 30%;
+}
+
+input{
+    color: var(--white);
+}

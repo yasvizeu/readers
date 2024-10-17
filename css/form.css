@@ -1,4 +1,10 @@
 /* Form */
+/* .form-group{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
+
 
 .form-group{
     margin-bottom: 10px;
@@ -54,8 +60,8 @@ option[disabled] {
     background-color: var(--escuro);
 }
 
-.form-group-button {
+/* .form-group-button {
     display: flex;
     justify-content: right;
     gap: 10px;
-}
+} */
